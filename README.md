@@ -1,6 +1,8 @@
 # Summer-Internship-Report-23
 
-The repository will serve as a base for the format the interns have to follow to submit their final reports as a part of the Summer Internship. We've added a few topics to make it easier for you to navigate your report writing. 
+The repository will serve as a base for the format the interns have to follow to submit their mid-term and final reports as a part of the Summer Internship. We've added a few topics to make it easier for you to navigate your report writing. 
+
+[Mid-term MIM4 presentation template](https://docs.google.com/presentation/d/1ywQMQsQpKri67lmuZz0DwUr8WMANzGkg/edit?usp=sharing&ouid=105956229107552204516&rtpof=true&sd=true)
 
 # Table of Contents
 1. [Guidelines](#guidelines)
