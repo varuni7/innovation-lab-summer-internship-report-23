@@ -71,12 +71,22 @@ Bangalore - 560085
 %\listoftables
 
 \chapter{Introduction}
-Length: [0.5 to 2 pages ]
-Introduce the reader to the problem/domain. Write about the issues that your project addresses/improves/solves. Write about use-cases for your project. 
-\section{Problem Statement}
-A formal statement of what you are trying to achieve. \\
+Autonomous robotic systems operating in dynamic and unknown environments face a fundamental challenge: navigating between positions. The complexity of this task depends on the vast number of potential robot positions, forming a search space that is often continuous, unbounded, and high dimensional. To address this, most global path-planning algorithms resort to discretization, reducing the search space to a countable subset of states. While this simplifies the problem, it limits algorithm performance to the chosen discrete approximation. In this report, we examine the implications of discretization in path-planning algorithms and explore alternative methods to enhance accuracy and efficiency. By analyzing existing research, we aim to contribute insights for advancing path planning in autonomous robotic systems, enabling them to operate effectively in diverse environments.
 
-You can conclude the introduction by writing how the rest of the report is organised.
+
+RRT-Connect is one such algorithm that is a bidirectional motion planner and finds a solution faster than other planners. However, the algorithm wastes resources exploring regions leading to low-quality solutions and it also doesn’t guarantee the most optimal solution. 
+
+
+BIT* is another such motion planning algorithm that uses an ellipse-shaped guiding function for exploration toward the goal. It also provides the shortest path possible, thus making it Asymptotically Optimal.
+
+
+The goal is to improve BIT* and make it faster. This can be done by making it Bidirectional and incorporating the Connect function, while still using the ellipse-shaped guiding function for exploration toward the goal.
+\section{Problem Statement}
+In this report, we are trying to create a new Path-Planning Algorithm, BIT*Connect that combines BIT* and RRT-Connect to give us a Bidirectional planner and is Asymptotically Optimal.
+
+
+This report consists of Literature Survey, Software Requirements and ends with the Results and Conclusions that we have arrived at.
+
 
 \chapter{Literature Survey/Related Work} 
 % Length: [1-3 pages]. 
