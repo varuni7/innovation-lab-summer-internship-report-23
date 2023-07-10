@@ -31,9 +31,9 @@
 \begin{tabular}{c c}    
     \textbf{Name} & 
     \textbf{SRN} \\[0.5cm]
-    \ {Ayush Kale} & {PES2UG21CS} \\
-    \ {Varuni H K} & {PES2UG21CS597} \\
-    \ {Vikas Paul Menezes} & {PES2UG21CS601} \\         
+    \ {Intern-1} & {SRN-1} \\
+    \ {Intern-2} & {SRN-2} \\
+    \ {Intern-3} & {SRN-3} \\         
 \end{tabular}
 \vspace{0.5cm}
 
@@ -77,29 +77,8 @@ A formal statement of what you are trying to achieve. \\
 You can conclude the introduction by writing how the rest of the report is organised.
 
 \chapter{Literature Survey/Related Work} 
-% Length: [1-3 pages]. 
-% Are there existing solutions to your problem? If yes, elaborate in a few lines. You can also write about the theory/concepts associated with your project. Cite related work  \cite{wiki:latex}.  You can conclude this section by stating how your work is novel/different from the related work you have just described. For each paper or link that you mention here, please include a short summary of the resource as well as how the resource contributed to your project.
-Motion planning is a critical research field in robotics, tackling the complex task of finding feasible paths for robots. Among the various approaches, sampling-based methods have emerged as efficient solutions to address this challenge\cite{lavalle2006planning}. These methods provide a practical way to navigate through intricate environments by sampling configurations and constructing paths based on these samples. Path planning is a purely geometric process that is only concerned with finding a collision free path regardless of the feasibility of the path. Kinodynamic planning, on the other hand, considers the kinematics and dynamics of the robot. Once a path is specified the final procedure is motion control or execution \cite{6722915}.
-
-
-Probabilistic Roadmaps \cite{508439} constructs a roadmap by randomly sampling configurations and connecting them to form a graph representation of the environment. It then uses graph search algorithms to find a path between the start and goal configurations. This algorithm does not give the optimal solution every time. Considering a configuration space with a large number of obstacles situated very close to each other, if the gap between two obstacles is very narrow, due to our system generates nodes randomly, the probability of generating nodes between those gaps is very small. The system might generate nodes in that region if we increase the number of iterations but increasing the number of iterations does not solve the problem.
-When the system fails to generate a path for such configurations of the space, we wouldn’t know whether it is because the path does not exist or the number of iterations is less for that environment.
-
-This problem was overcome by Rapidly Exploring Random Trees (RRT) . RRT* is an improvemnt over RRT as it is asymtotically optimal by introcucing incremental rewiring\cite{6942976} but suffers from high memory consumption due to large expansion of its search space.\cite{noreen2016optimal}Informed RRT* , uses a necessary condition to improve the solution at any iteration by the addition of states from an ellipsoidal subset of the planning domain. \cite{6942976} This helps to focus the search contrary to RRT* which spends a lot of time exploring . The Fast Marching Tree (FMT*) algorithm performs a "lazy" dynamic programming recursion on a predetermined number of probabilistically-drawn samples to grow a tree of paths, which moves steadily outward in cost-to-arrive space \cite{janson2015fast}.
-
-Batch Informed Trees (BIT*), is a planning algorithm that balances the benefits of graph-search and sampling-based techniques. It uses batches of samples to perform an ordered search on a continuous planning domain while maintaining anytime performance. By processing samples in batches, its search can be ordered around the minimum solution proposed by a heuristic, as in A* \cite{7139620}. BIT* is a combination of FMT* and Inforemd RRT* and performs better than all of its predecessors . 
-
-RRT Connect is a bidirectional Motion planner which solves single-query path planning problems in high-dimensional configuration spaces by incrementally building two rapidly-exploring random trees (RRTs) rooted at the start and the goal configurations. The trees each explore space around them and also advance towards each other through, the use of a simple greedy heuristic\cite{844730}.
-
-In this project we propose to combine BIT* and RRT-Connect and give rise to a new algorithm called BIT* Connect which uses the greedy heuristic of RRT - Connect and grow two BIT* trees from both the start and goal states alternatively . RRT Connect gives us the fastest initial solutions and BIT* gives us asymptotic optimality , finding the intial and final (shortest) solution quicker than other planners.
-
-
-
-
-
-
-
-
+Length: [1-3 pages]. 
+Are there existing solutions to your problem? If yes, elaborate in a few lines. You can also write about the theory/concepts associated with your project. Cite related work  \cite{wiki:latex}.  You can conclude this section by stating how your work is novel/different from the related work you have just described. For each paper or link that you mention here, please include a short summary of the resource as well as how the resource contributed to your project.
 
 \chapter{Main Body}
 This is the heart of your report. It describes your project. It can be more than one chapter/section. For example : 'System model', 'methodology', 'solution method', 'approach'. Include diagrams, flow charts, algorithms etc. if relevant. Make sure you refer to all figures and tables that you include in the text. Like this: In Figure \ref{solvay}, the IQ level is over 9000! (Read in Vegeta voice.)
