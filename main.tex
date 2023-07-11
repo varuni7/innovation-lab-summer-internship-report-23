@@ -2,6 +2,9 @@
 \usepackage{parskip}
 \usepackage{adjustbox}
 \usepackage{amstext}
+\graphicspath{ {./images/} }
+\usepackage{hyperref}
+
 %\usepackage{amsmath}
 
 \begin{document} 
@@ -43,7 +46,7 @@
 \begin{tabular}{c c}
     \textbf{Name} & 
     \textbf{SRN} \\[0.5cm]
-    \ {SriKrishna B R} & {SRN-1} \\
+    \ {SriKrishna B R} & {PES1201700469} \\
     \ {Disha Jain} & {SRN-2} \\
 \end{tabular}
        
@@ -61,7 +64,7 @@ Bangalore - 560085
 
 
 \begin{abstract}
-  This project aims to combine two motion planning algorithms, \textbf{BIT*} and \textbf{RRT-Connect}, to create a more optimal algorithm called BIT* Connect.\\
+  \font This project aims to combine two motion planning algorithms, \textbf{BIT*} and \textbf{RRT-Connect}, to create a more optimal algorithm called BIT* Connect.\\
   \textbf{RRT-Connect} is a bidirectional planner that finds solutions quickly but may explore unnecessary regions, resulting in suboptimal solutions. \textbf{BIT*(Batch Informed Trees)} is an efficient planner that uses an ellipse-shaped guiding function and guarantees the shortest path.\\
   Our goal is to create an asymptotically optimal algorithm that quickly finds initial and final solutions. By leveraging the efficiency of BIT* and the speed of RRT-Connect, BIT* Connect aims to be a faster and more optimal motion planning algorithm.
 \end{abstract}
@@ -106,7 +109,7 @@ RRT Connect is a bidirectional Motion planner which solves single-query path pla
 In this project we propose to combine BIT* and RRT-Connect and give rise to a new algorithm called BIT* Connect which uses the greedy heuristic of RRT - Connect and grow two BIT* trees from both the start and goal states alternatively . RRT Connect gives us the fastest initial solutions and BIT* gives us asymptotic optimality , finding the intial and final (shortest) solution quicker than other planners.
 
 
-
+\includegraphics[height=15cm,width = 15cm]{Flow.png}
 
 
 
@@ -114,9 +117,14 @@ In this project we propose to combine BIT* and RRT-Connect and give rise to a ne
 \chapter{Progress}
 
 \section{WEEK 1}
+\includegraphics[height=11cm,width = 15cm]{week1.png}
+
 \section{WEEK 2}
+\includegraphics[height=17cm,width = 15cm]{week2.png}
 \section{WEEK 3}
+\includegraphics[height=17cm,width = 15cm]{week3.png}
 \section{WEEK 4}
+\includegraphics[height=17cm,width = 15cm]{week4.png}
 
 % \chapter{Main Body}
 % This is the heart of your report. It describes your project. It can be more than one chapter/section. For example : 'System model', 'methodology', 'solution method', 'approach'. Include diagrams, flow charts, algorithms etc. if relevant. Make sure you refer to all figures and tables that you include in the text. Like this: In Figure \ref{solvay}, the IQ level is over 9000! (Read in Vegeta voice.)
@@ -140,37 +148,27 @@ In this project we propose to combine BIT* and RRT-Connect and give rise to a ne
 
 
 %template for table
-\begin{table}[ht]
-\label{XYComparison}
-\begin{center}
-\begin{tabular} {l|l|l} %left aligned
-\hline
-\hline
-\textbf{Criteria} & \textbf{X} & \textbf{Y}  \\
-\hline
-A & B & C \\
-D & B & C \\
-\hline 
-\hline
-\end{tabular}
-\end{center}
-\caption{Comparison of  X and Y}
-\end{table}
+ 
+ 
 
 \chapter{Conclusions and Future Work}
-The conclusion we draw from this report is that intuitively, BIT*Connect should be able to combine the "Elliptical Guiding" function of BIT* and the "Connect" function of RRT-Connect to create a Bidirectional BIT*Connect.
+A short paragraph about the conclusions you have drawn. Feel free to change the formatting and sizes of your figures/tables. In conclusion, your report should a) give the reader an idea of what you did b) allow them to understand and replicate your results.
 
-
-\includegraphics[height=5.75cm,width = 10.75cm]{bitconnect.png}
 %Please make sure you keep a log of all the resources you have used. This includes websites, tutorials, videos, papers or even blogs can be cited.
 
 \bibliographystyle{ieeetr} 
 \bibliography{bibmil.bib}
 \appendix 
-\chapter{sample appendix header 1}
+
 %\label{app_1}
-Appendices: 
-Proofs, links to your code and any other misc. info that doesn?t fit in nicely into other sections. 
+ 
+\chapter{Appendex}
+open motion planning library \href{https://ompl.kavrakilab.org/}{https://ompl.kavrakilab.org/}
+ \vspace{2pt}
+ 
+     Benchmarking - pathbench \href{https://github.com/perfectly-balanced/PathBench}{https://github.com/perfectly-balanced/PathBench}
+ 
+ 
 
 
 \end{document}
